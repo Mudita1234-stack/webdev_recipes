@@ -1,0 +1,436 @@
+/*-------------------------------------------------------------First home page--------------------------------------------------------------*/
+
+*{
+    background-color: black;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    box-sizing: border-box;
+}
+
+.main1{
+    margin-left: 30px;
+    margin-top: 00px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+#header{
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.header2{
+    border: 4px solid #b54769;
+    border-radius: 8px;
+    margin-left: 50px;
+    align-items: center;
+    display: flex;
+    margin-top: 00px;
+    
+
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 15px;
+}
+
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 25px;
+    position: relative;
+}
+
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background-color: #CE2029;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+#N101{
+    color: #b54769;
+}
+
+#heading1{
+    font-size: 55px;
+    text-decoration:solid;
+}
+
+#A101{
+    font-size: 25px;
+    font-weight: 650;
+}
+
+#header-text-heading1{
+    color: #b54769;
+    text-decoration: dashed #b54769;
+    font-size: 50px;
+}
+
+.buttondiv{
+    display: flex;
+    justify-content: center;
+}
+
+.V101{
+    width: 90%;
+    color: white;
+    font-size: 21px;
+    background-color: #b54769;
+    border-radius: 18px;
+    height: 45px;
+    margin-top: 15px;
+    font-weight: 500;
+}
+
+#button1{
+    width: 60%;
+    color: black;
+    background-color: white;
+    border-radius: 18px;
+    height: 45px;
+    border: 4px solid white;
+}
+
+#buttontext{
+    color: white;
+    font-size: 25px;
+    font-weight: 600;
+    background-color: #b54769;
+}
+
+.header-text{
+    margin-left: 70px;
+}
+
+#header-text-para{
+    font-size: 25px
+}
+
+.country{
+    color: #b54769;
+    font-weight: 700;
+}
+
+.homepage2{
+    display: flex;
+}
+
+#img{
+    height: 390px;
+    width: 550px;
+    margin-top: 40px;
+    background-size: cover;
+    margin-right: 15px;
+    border-radius: 20px;
+    margin-left: 20px;
+}
+
+/*-------------------------------------------------------------Second page--------------------------------------------------------------*/
+#dishesh1{
+    color: #b54769;
+}
+
+.btw{
+    display: flex;
+    justify-content: center;
+    text-decoration: dashed;
+    border-bottom:3px solid #b54769;
+    border-top:3px solid #b54769;
+}
+
+#bye{
+    font-size: 40px;
+}
+
+.indianimg1{
+    margin-left: 30px;
+    padding-top: 25px;
+    padding-left: 25px;
+    padding-bottom: 25px;
+    padding-right: 25px;
+    display: flex;
+}
+
+.indianimg1img1{
+    margin-right: 30px;
+}
+
+
+#img2{
+    height: 290px;
+    width: 330px;
+    border-radius: 22px;
+}
+
+#span1{
+    color: aqua;
+}
+
+#buttonn{
+    height: 45px;
+    width: 1350px;
+    background-color: #b54769;
+    border: none;
+    border-radius: 15px;
+}
+
+#button1{
+    height: 45px;
+    width: 90%;
+    background-color: #b54769;
+    border: none;
+}
+
+#button1:hover{
+    border: 3px solid white;
+}
+
+.V101:hover{
+    border: 3px solid white;
+}
+
+
+#buttonspan{
+    background-color: #b54769;
+    font-size: 23px;
+}
+
+.indianimg2{
+    margin-left: 30px;
+    padding-top: 25px;
+    padding-left: 25px;
+    padding-bottom: 25px;
+    padding-right: 25px;
+    display: flex;
+}
+
+#dishes1{
+    font-size: 50px;
+}
+
+/*-----------------------------------------------------------------------------------Last form user input form -----------------------------------------------------------------------------------*/
+
+.mainbody{
+    display: flex;
+    justify-content: center;
+}
+
+.formtext{
+    font-size: 29px;
+    font-weight: 500;
+    color: aqua;
+}
+
+.formbutton{
+    background-color: #262626;
+    border-radius: 10px;
+    width: 800px;
+    height: 48px;
+    border: none;
+    margin-top: 15px;
+}
+
+:placeholder-shown{
+    font-size: 18px;
+    padding-left: 19px;
+}
+
+.radio{
+    color: aqua;
+    font-size: 30px;
+}
+
+#select{
+    font-size: 33px;
+}
+
+#submitbutton{
+    background-color: #b54769;
+    height: 55px;
+    width: 550px;
+    border-radius: 10px;
+    font-size: 22px;
+}
+
+.formbutton1{
+    background-color: #262626;
+    border-radius: 10px;
+    width: 650px;
+    height: 48px;
+    border: none;
+    margin-top: 15px;
+}
+
+
+
+/*-------------------------------------------------------------------------------------------------------footer section ----------------------------------------------------------*/
+.footer1{
+    margin-left: 25px;
+}
+
+
+
+
+
+
+
+.thank-you-container {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 20px 40px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+
+}
+
+.thank-you-container h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.thank-you-container p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1.7rem;
+    color: aqua;
+    background: #b54769;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+}
+
+.button:hover {
+    background: #f8b500;
+    color: #fff;
+    transform: scale(1.1);
+}
+
+#footer{
+    display: flex;
+}
+
+#footer2{
+    margin-left: 150px;
+}
+
+/*----------------------------------------------------------------------contact us details ------------------------------------------------------------*/
+
+
+.contact-left{
+    flex-basis: 35%;
+    margin-bottom: 50px;
+}
+
+.sub-tile{
+    font-size: 28px;
+}
+
+.contact-left p{
+    margin-top: 30px;
+}
+
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background-color: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+}
+
+form button{
+    background-color: #ff004f;
+    margin: 10px 10px ;
+    padding: 10px 10px ;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 7px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.contact-left h1{
+    color: #b54769;
+    border-bottom: 4px solid;
+}
+
+.contact-left h3 span{
+    color: aqua;
+    font-size: 23px;
+}
+
+#Rating-submit-button{
+    margin-top: 35px;
+    margin-left: 0px;
+    font-size: 20px;
+    font-weight: 590;
+    height: 45px;
+    width: 300px;
+    border: none;
+    border-radius: 12px;
+    background-color: #b54769;
+}
+
+#Ratingdiv{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#Rating-clear-button{
+    margin-top: 35px;
+    background-color: #b54769;
+    height: 48px;
+    font-size: 20px;
+    font-weight: 590;
+    border-radius: 12px;
+    width: 250px;
+}
+
+#Rating-clear-button:hover{
+    border: 2px solid white;
+}
+
+#Rating-submit-button:hover{
+    border: 2px solid white;
+}

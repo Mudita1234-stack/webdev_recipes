@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form with Local Storage</title>
+</head>
+<body>
+    <h1>Save Form Details in Local Storage</h1>
+    <form id="myForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+        
+        <label for="message">Message:</label>
+        <textarea id="message" name="message"></textarea><br><br>
+        
+        <button type="submit">Save</button>
+    </form>
+    <button id="clearData">Clear Data</button>
+
+    <script>
+        document.getElementById('myForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent form submission to a server
+            
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+            
+            const formData = {
+                name: name,
+                email: email,
+                message: message
+            };
+            
+            localStorage.setItem('formData', JSON.stringify(formData));
+            alert('Form details saved in localStorage!');
+        });
+
+        function loadFormData() {
+            const savedData = localStorage.getItem('formData');
+            if (savedData) {
+                const formData = JSON.parse(savedData);
+                document.getElementById('name').value = formData.name;
+                document.getElementById('email').value = formData.email;
+                document.getElementById('message').value = formData.message;
+            }
+        }
+
+        document.getElementById('clearData').addEventListener('click', function() {
+            localStorage.removeItem('formData');
+            alert('Form details cleared from localStorage!');
+            document.getElementById('myForm').reset();
+        });
+
+        window.onload = loadFormData;
+    </script>
+</body>
+</html>
